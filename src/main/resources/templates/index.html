@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome to Your Dating App</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style>
+		body {
+			background-color: #f8f9fa;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			padding-top: 50px;
+		}
+		.app-title {
+			font-size: 3em;
+			margin-bottom: 30px;
+			color: #e91e63;
+		}
+		.app-links a {
+			display: block;
+			font-size: 1.5em;
+			padding: 10px;
+			margin-bottom: 10px;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+		.app-links a:hover {
+			background-color: #e91e63;
+		}
+	</style>
+</head>
+<body>
+<div class="container text-center">
+	<h1 class="app-title">Welcome to Date App</h1>
+	<div class="app-links">
+		<a th:href="@{/users}" class="btn btn-primary">Find Matches</a>
+		<a th:href="@{/register}" class="btn btn-secondary">Register</a>
+		<a th:href="@{/login}" class="btn btn-info">Login</a>
+	</div>
+</div>
+</body>
+</html>
